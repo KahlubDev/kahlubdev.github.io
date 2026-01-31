@@ -216,7 +216,7 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./developerFolio-master/src/assets/images/CareNest Logo(2)-page-0.webp"),
       projectName: "CareNest",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
@@ -228,7 +228,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      image: require("./developerFolio-master/src/assets/images/1734357960_WhatsApp Image 2024-09-09 at 22.44.36_e5918b52.webp"),
       projectName: "Muslim Association Nakuru",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
