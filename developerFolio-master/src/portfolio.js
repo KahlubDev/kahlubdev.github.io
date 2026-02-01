@@ -33,13 +33,13 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/KahlubDev",
+  linkedin: "https://www.linkedin.com/in/caleb-mwangi-9b3a133a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  gmail: "njogumwangi00@gmail.com",
+  gitlab: "",
+  facebook: "",
+  medium: "",
+  stackoverflow: "",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -54,7 +54,7 @@ const skillsSection = {
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ OOP style apps with Java and C++"),
     emoji(
       "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
     )
@@ -85,10 +85,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
+    
     {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
@@ -105,10 +102,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
+    
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
@@ -159,7 +153,7 @@ const techStack = {
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "70%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -214,24 +208,24 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
+      projectName: "Muslim Association Nakuru (MAN)",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://muslimassociationnakuru.org/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
       image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
+      projectName: "CareNest",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://carenest.co.ke/"
         }
       ]
     }
