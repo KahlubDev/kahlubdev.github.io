@@ -34,7 +34,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/KahlubDev",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
+  linkedin: "https://www.linkedin.com/in/caleb-mwangi-9b3a133a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   gmail: "njogumwangi00@gmail.com",
   gitlab: "",
   facebook: "",
