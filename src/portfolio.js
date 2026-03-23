@@ -318,7 +318,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -348,7 +348,7 @@ const podcastSection = {
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-"<iframe width="560" height="315" src="https://www.youtube.com/embed/9I6ZlSZDQZQ?si=wIzWMaNt9hq8b5Nd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+    "https://open.spotify.com/episode/3Gqmt9B9n3jpRy7dtRuF9J?si=897e51aac0874ab7"
   ],
   display: true // Set false to hide this section, defaults to true
 };
