@@ -332,9 +332,9 @@ const talkSection = {
   talks: [
     {
       title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      subtitle: "Codelab at GDG DevFest",
+      slides_url: "",
+      event_url: ""
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -344,11 +344,11 @@ const talkSection = {
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+  subtitle: "I LOVE TO LISTEN TO PODCASTS ABOUT TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+    "https://open.spotify.com/episode/3Gqmt9B9n3jpRy7dtRuF9J?si=897e51aac0874ab7"
   ],
   display: true // Set false to hide this section, defaults to true
 };
