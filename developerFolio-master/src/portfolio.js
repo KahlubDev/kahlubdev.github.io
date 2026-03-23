@@ -209,7 +209,7 @@ const bigProjects = {
     {
       image: require("developerFolio-master/src/assets/images/1734357960_WhatsApp Image 2024-09-09 at 22.44.36_e5918b52.webp"),
       projectName: "Muslim Association Nakuru (MAN)",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "A webiste for a Non Profit Organization based in Nakuru,Kenya",
       footerLink: [
         {
           name: "Visit Website",
@@ -219,9 +219,9 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/CareNest Logo(2)-page-0.webp"),
+      image: require(""),
       projectName: "CareNest",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "A website for a Mental Health company with advanced features",
       footerLink: [
         {
           name: "Visit Website",
