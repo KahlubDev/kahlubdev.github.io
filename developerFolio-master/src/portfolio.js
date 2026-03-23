@@ -207,9 +207,9 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/1734357960_WhatsApp Image 2024-09-09 at 22.44.36_e5918b52.webp"),
+      image: require(".D:\DeveloperFolio\kahlubdev.github.io\developerFolio-master\src\assets\images\1734357960_WhatsApp Image 2024-09-09 at 22.44.36_e5918b52.webp"),
       projectName: "Muslim Association Nakuru (MAN)",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "A website for a Non Profut organization based in Nakuru,Kenya",
       footerLink: [
         {
           name: "Visit Website",
