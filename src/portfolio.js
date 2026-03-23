@@ -348,7 +348,7 @@ const podcastSection = {
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-    "https://youtu.be/9I6ZlSZDQZQ?si=c-24-_uMFMbRboqY"
+    "<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/2W5WK52wgbygqu0K5wN8hQ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>"
   ],
   display: true // Set false to hide this section, defaults to true
 };
