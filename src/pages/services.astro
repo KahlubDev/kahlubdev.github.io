@@ -3,38 +3,52 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title="Projects" sideBarActiveItemID="services">
-  <div>
-    <div class="text-3xl w-full font-bold mb-5">Services Header</div>
+<BaseLayout title="Services" sideBarActiveItemID="services">
+  <div class="mb-8">
+    <div class="text-3xl w-full font-bold">Services</div>
+    <p class="text-base-content/70 mt-3 text-lg">
+      I offer a wide range of technical solutions — from software development to infrastructure and consulting.
+    </p>
   </div>
 
   <HorizontalCard
-    title="Service 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    badge="NEW"
+    title="Full Stack Software Development"
+    img="/5.webp"
+    desc="Building modern, scalable Web and Android applications using React, Next.js, Node.js, Flutter, and more. Clean code, great UX, and performance-focused."
+    badge="Popular"
     url="#"
   />
   <div class="divider my-0"></div>
+
   <HorizontalCard
-    title="Service 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Cloud Solutions & DevOps"
+    img="/5.webp"
+    desc="Currently specializing in Cloud infrastructure (AWS, Vercel, DigitalOcean). I help businesses migrate, optimize costs, and deploy reliable cloud-native applications."
+    badge="Trending"
     url="#"
   />
   <div class="divider my-0"></div>
+
   <HorizontalCard
-    title="Service 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Database Design & Optimization"
+    img="/5.webp"
+    desc="Expert in designing efficient databases (PostgreSQL, MongoDB, MySQL). Performance tuning, data modeling, and secure data architecture."
     url="#"
-    badge="NEW"
   />
   <div class="divider my-0"></div>
+
   <HorizontalCard
-    title="Service 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Networking & Hardware Solutions"
+    img="/5.webp"
+    desc="Network setup, configuration, troubleshooting, hardware upgrades, and IT infrastructure optimization for businesses and individuals."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Technical Consulting & Mentorship"
+    img="/5.webp"
+    desc="Providing strategic technical advice, system architecture planning, code reviews, and mentoring aspiring developers."
     url="#"
   />
 </BaseLayout>

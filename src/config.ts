@@ -1,7 +1,18 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
+// src/config.ts
+export const SITE_TITLE = 'Kahlub Dev | Software Developer';
+export const SITE_DESCRIPTION = 'Full Stack Developer & Problem Solver | Building digital experiences with passion';
 
-export const SITE_TITLE = 'Astrofy | Personal Portfolio Website Template';
-export const SITE_DESCRIPTION = 'Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed.';
-export const GENERATE_SLUG_FROM_TITLE = true
-export const TRANSITION_API = true
+export const GENERATE_SLUG_FROM_TITLE = true;
+export const TRANSITION_API = true;
+
+// You can add more personal data here
+export const PERSONAL_INFO = {
+  name: "Caleb",
+  fullName: "Caleb Mwangi",
+  role: "Student Leader| Software Developer | Systems Engineer | Tech Enthusiast",
+  location: "Nakuru, Kenya",
+  email: "njogumwangi00@gmail.com",
+  github: "KahlubDev",
+  linkedin: "https://www.linkedin.com/in/caleb-mwangi-9b3a133a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  // Add more as needed
+};
