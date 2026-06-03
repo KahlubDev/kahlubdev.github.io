@@ -1,26 +1,25 @@
 ---
 ---
 
-<!-- Cool Preloader - Shows only on first visit -->
-<div id="preloader" class="fixed inset-0 z-[99999] flex items-center justify-center bg-base-100 hidden">
-  <div class="text-center">
-    <!-- Animated Logo -->
-    <div id="logo" class="mx-auto mb-8 text-7xl font-black tracking-tighter text-base-content">
+<div id="preloader" class="fixed inset-0 z-[99999] flex items-center justify-center bg-base-100">
+  <div class="text-center px-6 max-w-[280px]">
+    <!-- Compact Logo -->
+    <div id="logo" class="mx-auto mb-6 text-5xl font-black tracking-tighter text-base-content">
       Caleb<span class="text-primary">Mwangi</span>
     </div>
 
     <!-- Typing Effect -->
-    <div class="font-mono text-lg mb-8 text-base-content/70 min-h-[32px] flex items-center justify-center">
+    <div class="font-mono text-[15px] mb-6 text-base-content/70 min-h-[26px]">
       <span id="typing-text"></span>
-      <span class="inline-block w-2 h-6 bg-primary animate-pulse ml-1"></span>
+      <span class="inline-block w-1 h-4 bg-primary animate-pulse ml-1 align-middle"></span>
     </div>
 
-    <!-- Progress Bar -->
-    <div class="w-80 mx-auto h-1.5 bg-base-300 rounded-full overflow-hidden">
-      <div id="progress" class="h-full bg-gradient-to-r from-primary to-secondary w-0 rounded-full"></div>
+    <!-- Slim Progress Bar -->
+    <div class="w-56 mx-auto h-1 bg-base-300 rounded-full overflow-hidden">
+      <div id="progress" class="h-full bg-gradient-to-r from-primary to-secondary w-0 rounded-full transition-all"></div>
     </div>
 
-    <p class="mt-4 text-sm text-base-content/50">Loading amazing things...</p>
+    <p class="mt-5 text-xs text-base-content/60">Loading portfolio...</p>
   </div>
 </div>
 
@@ -31,10 +30,9 @@
 
   const messages = [
     "Booting portfolio...",
-    "Loading projects.exe",
-    "Fetching experience data...",
-    "Connecting neurons...",
-    "Almost there ✨"
+    "Loading projects...",
+    "Fetching experience...",
+    "Almost ready ✨"
   ];
 
   function typeMessage(text, callback) {
@@ -54,23 +52,20 @@
   function startProgress() {
     let width = 0;
     const interval = setInterval(() => {
-      width += 2;
+      width += 2.5;
       progressBar.style.width = width + '%';
       if (width >= 100) clearInterval(interval);
-    }, 35);
+    }, 38);
   }
 
   function hidePreloader() {
-    preloader.style.transition = 'opacity 0.8s ease';
+    preloader.style.transition = 'opacity 0.85s ease';
     preloader.style.opacity = '0';
-    setTimeout(() => preloader.style.display = 'none', 800);
+    setTimeout(() => preloader.style.display = 'none', 850);
   }
 
-  // Check if this is the first visit in this session
-  const hasVisited = sessionStorage.getItem('hasVisited');
-
-  if (!hasVisited) {
-    // First time visitor → Show loader
+  // Show only on first visit
+  if (!sessionStorage.getItem('hasVisited')) {
     preloader.classList.remove('hidden');
     sessionStorage.setItem('hasVisited', 'true');
 
@@ -87,7 +82,6 @@
         setTimeout(hidePreloader, 700);
       }
     };
-
     showNext();
   }
 </script>
