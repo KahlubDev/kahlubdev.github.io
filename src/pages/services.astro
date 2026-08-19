@@ -4,51 +4,54 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
 <BaseLayout title="Services" sideBarActiveItemID="services">
-  <div class="mb-8">
-    <div class="text-3xl w-full font-bold">Services</div>
-    <p class="text-base-content/70 mt-3 text-lg">
-      I offer a wide range of technical solutions — from software development to infrastructure and consulting.
+  <div class="mb-10">
+    <h1 class="text-3xl md:text-4xl font-bold mb-3">Services</h1>
+    <p class="text-base-content/70 text-lg max-w-2xl">
+      I offer practical technical solutions across software development, infrastructure, and consulting.
     </p>
   </div>
 
-  <HorizontalCard
-    title="Full Stack Software Development"
-    img="/5.webp"
-    desc="Building modern, scalable Web and Android applications using React, Next.js, Node.js, Flutter, and more. Clean code, great UX, and performance-focused."
-    badge="Popular"
-    url="#"
-  />
-  <div class="divider my-0"></div>
+  <div class="space-y-6">
+    <HorizontalCard
+      title="Full Stack Software Development"
+      img="/5.webp"
+      desc="Building modern, scalable web and Android applications using React, Next.js, Node.js, Flutter and more. Focused on clean code, performance and good user experience."
+      url="#"
+      badge="Popular"
+      tags={["Web", "Mobile", "Full Stack"]}
+    />
 
-  <HorizontalCard
-    title="Cloud Solutions & DevOps"
-    img="/5.webp"
-    desc="Currently specializing in Cloud infrastructure (AWS, Vercel, DigitalOcean). I help businesses migrate, optimize costs, and deploy reliable cloud-native applications."
-    badge="Trending"
-    url="#"
-  />
-  <div class="divider my-0"></div>
+    <HorizontalCard
+      title="Cloud Solutions & DevOps"
+      img="/5.webp"
+      desc="Helping businesses set up, migrate and optimise cloud infrastructure on AWS, Vercel and DigitalOcean. Reliable deployments and cost-aware architecture."
+      url="#"
+      badge="Trending"
+      tags={["Cloud", "DevOps"]}
+    />
 
-  <HorizontalCard
-    title="Database Design & Optimization"
-    img="/5.webp"
-    desc="Expert in designing efficient databases (PostgreSQL, MongoDB, MySQL). Performance tuning, data modeling, and secure data architecture."
-    url="#"
-  />
-  <div class="divider my-0"></div>
+    <HorizontalCard
+      title="Database Design & Optimisation"
+      img="/5.webp"
+      desc="Designing efficient database systems with PostgreSQL, MongoDB and MySQL. Includes data modelling, performance tuning and secure architecture."
+      url="#"
+      tags={["Database", "Backend"]}
+    />
 
-  <HorizontalCard
-    title="Networking & Hardware Solutions"
-    img="/5.webp"
-    desc="Network setup, configuration, troubleshooting, hardware upgrades, and IT infrastructure optimization for businesses and individuals."
-    url="#"
-  />
-  <div class="divider my-0"></div>
+    <HorizontalCard
+      title="Networking & Hardware Solutions"
+      img="/5.webp"
+      desc="Network setup, configuration, troubleshooting, hardware upgrades and IT infrastructure support for businesses and individuals."
+      url="#"
+      tags={["Networking", "Hardware"]}
+    />
 
-  <HorizontalCard
-    title="Technical Consulting & Mentorship"
-    img="/5.webp"
-    desc="Providing strategic technical advice, system architecture planning, code reviews, and mentoring aspiring developers."
-    url="#"
-  />
+    <HorizontalCard
+      title="Technical Consulting & Mentorship"
+      img="/5.webp"
+      desc="Strategic technical advice, system architecture planning, code reviews and mentoring for developers looking to grow."
+      url="#"
+      tags={["Consulting", "Mentorship"]}
+    />
+  </div>
 </BaseLayout>

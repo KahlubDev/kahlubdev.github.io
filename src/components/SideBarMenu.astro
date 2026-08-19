@@ -1,26 +1,39 @@
 ---
 const { sideBarActiveItemID } = Astro.props;
-const activeClass = "bg-base-300"; // For primary color replace with `active` class
+const activeClass = "bg-base-300 font-medium";
 ---
 
-<ul class="menu grow shrink menu-md overflow-y-auto">
-    <li><a class="py-3 text-base" id="home" href="/">Home</a></li>
-    <li><a class="py-3 text-base" id="projects" href="/projects">Projects</a></li>
-    <li><a class="py-3 text-base" id="services" href="/services">Services</a></li>
-    <!-- <li><a class="py-3 text-base" id="store" href="/store">Store</a></li>-->
-    <li><a class="py-3 text-base" id="blog" href="/blog/">Blog</a></li>
-    <li><a class="py-3 text-base" id="cv" href="/cv">CV</a></li>
-    <li>
-        <a
-            class="py-3 text-base"
-            href="mailto:contact.njogumwangi@gmail.com"
-            target="_blank"
-            referrerpolicy="no-referrer-when-downgrade">Contact</a
-        >
-    </li>
+<ul class="menu menu-md grow shrink overflow-y-auto px-1">
+  <li>
+    <a id="home" href="/" class="py-3 text-base">Home</a>
+  </li>
+  <li>
+    <a id="projects" href="/projects" class="py-3 text-base">Projects</a>
+  </li>
+  <li>
+    <a id="services" href="/services" class="py-3 text-base">Services</a>
+  </li>
+  <li>
+    <a id="blog" href="/blog/" class="py-3 text-base">Blog</a>
+  </li>
+  <li>
+    <a id="cv" href="/cv" class="py-3 text-base">CV</a>
+  </li>
+  <li>
+    <a
+      href="mailto:contact.njogumwangi@gmail.com"
+      class="py-3 text-base"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Contact
+    </a>
+  </li>
 </ul>
 
-<script define:vars={{ sideBarActiveItemID: sideBarActiveItemID, activeClass: activeClass }}>
-const activeItemElem = document.getElementById(sideBarActiveItemID);
-activeItemElem && activeItemElem.classList.add(activeClass);
+<script define:vars={{ sideBarActiveItemID, activeClass }}>
+  const activeItem = document.getElementById(sideBarActiveItemID);
+  if (activeItem) {
+    activeItem.classList.add(...activeClass.split(" "));
+  }
 </script>

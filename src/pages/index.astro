@@ -4,55 +4,81 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug";
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Caleb Mwangi</div>
-    <div class="text-3xl py-3 font-bold">Software Developer & Problem Solver</div>
-    
-    <div class="py-4 max-w-2xl">
-      <p class="text-lg leading-relaxed">
-        Passionate Full Stack Developer from Nakuru, Kenya. I build modern, scalable web applications 
-        and love turning ideas into reality with clean code.
+  <!-- Hero Section -->
+  <section class="pb-16 pt-8 md:pt-12">
+    <div class="max-w-3xl">
+      <p class="text-lg text-base-content/70 mb-3" id="hero-greeting">
+        Hey there 
       </p>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4" id="hero-name">
+        I'm Caleb Mwangi
+      </h1>
+      <h2 class="text-2xl md:text-3xl font-semibold text-base-content/80 mb-6" id="hero-role">
+        Software Developer & Problem Solver
+      </h2>
+      <p class="text-lg leading-relaxed text-base-content/70 max-w-2xl mb-8" id="hero-bio">
+        Passionate Full Stack Developer from Nakuru, Kenya. I build modern, scalable web applications and love turning ideas into reality with clean code.
+      </p>
+
+      <div class="flex flex-wrap gap-4" id="hero-ctas">
+        <a href="#projects" class="btn btn-primary">
+          View Projects
+        </a>
+        <a href="/cv" class="btn btn-outline">
+          Download CV
+        </a>
+        <a href="https://github.com/KahlubDev" target="_blank" class="btn btn-ghost">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section id="projects" class="mt-8 mb-20">
+    <div class="flex items-end justify-between mb-8">
+      <h2 class="text-3xl font-bold">Featured Projects</h2>
+      <a href="/projects" class="text-sm text-primary hover:underline hidden sm:inline-block">
+        View all →
+      </a>
     </div>
 
-    <div class="mt-8 flex gap-4">
-      <a href="https://github.com/KahlubDev" target="_blank" class="btn btn-primary">GitHub</a>
-      <a href="#" target="_blank" class="btn btn-outline">Download CV</a>
+    <div class="space-y-6">
+      <HorizontalCard
+        title="Muslim Association Nakuru"
+        img="/man-logo.webp"
+        desc="A digital solution for a Non Profit Organization based in Nakuru, Kenya."
+        url="#"
+        badge="Featured"
+        tags={["Web App", "Non-Profit"]}
+      />
+      <div class="divider my-0"></div>
+      <HorizontalCard
+        title="CareNest"
+        img="/carenest.webp"
+        desc="A modern website for a Mental Wellness company based in Kenya."
+        url="#"
+        tags={["Website", "Wellness"]}
+      />
     </div>
-  </div>
+  </section>
 
-  <!-- Projects Section -->
-  <div class="mt-16">
-    <div class="text-3xl font-bold mb-6">Featured Projects</div>
-    
-    <!-- Replace these with your real projects -->
-    <HorizontalCard
-      title="Muslim Association Nakuru"
-      img="/MAN Logo.webp"
-      desc="A digital solution for a Non Profit Organization based in Nakuru, Kenya"
-      url="https://muslimassociationnakuru.org/"
-      badge="Featured"
-    />
-    <div class="divider my-0"></div>
+  <!-- Latest from Blog -->
+  <section class="mb-16">
+    <div class="flex items-end justify-between mb-8">
+      <h2 class="text-3xl font-bold">Latest from Blog</h2>
+      <a href="/blog" class="text-sm text-primary hover:underline hidden sm:inline-block">
+        All posts →
+      </a>
+    </div>
 
-    <HorizontalCard
-      title="CareNest"
-      img="/CareNest Logo(2)-page-0.webp"
-      desc="A modern website for a Mental Wellness company based in Kenya"
-      url="https://carenest.co.ke/"
-      
-    />
-  </div>
-
-  <!-- Latest Blog Posts -->
-  <div class="mt-20">
-    <div class="text-3xl font-bold mb-5">Latest from Blog</div>
     {
       last_posts.map((post) => (
         <>
@@ -67,5 +93,26 @@ const last_posts = posts.slice(0, 3);
         </>
       ))
     }
-  </div>
+  </section>
 </BaseLayout>
+
+<script>
+  import { animate, stagger } from "animejs";
+
+  // Hero entrance animation
+  const heroElements = [
+    "#hero-greeting",
+    "#hero-name",
+    "#hero-role",
+    "#hero-bio",
+    "#hero-ctas"
+  ];
+
+  animate(heroElements, {
+    opacity: [0, 1],
+    translateY: [24, 0],
+    delay: stagger(120),
+    duration: 700,
+    easing: "easeOutCubic"
+  });
+</script>

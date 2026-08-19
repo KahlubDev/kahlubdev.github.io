@@ -3,99 +3,86 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
-<BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
-  </div>
-
-  <div class="mb-10 text-justify leading-relaxed">
-    Passionate Full Stack Software Developer,Systems and Hardware Engineer from Nakuru, Kenya, with a strong foundation in building modern, scalable, 
-    and user-friendly web applications. I enjoy solving complex problems and turning ideas into functional digital products. 
-    Experienced in both frontend and backend development with a focus on clean code and excellent user experience.
-  </div>
-
-  <!-- Education -->
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
-  </div>
-
-  <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Bachelor of Science in Computer Science"
-      subtitle="2025— 2027 | Kabarak University, Nakuru, Kenya"
-    >
-      Relevant Coursework: Data Structures & Algorithms, Web Development, Software Engineering, Database Systems, Mobile Computing.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Diploma  in Information Technnology"
-      subtitle="2022— 2024 | Jomo Kenyatta University of Agriculture and  Technology, Juja, Kenya"
-    >
-      Relevant Coursework: Data Structures & Algorithms, Web Development, Software Engineering, Database Systems, Mobile Computing.
-    </TimeLineElement>
+<BaseLayout title="Experience" sideBarActiveItemID="cv">
+  <!-- Profile -->
+  <div class="mb-10">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4">Experience</h1>
+    <p class="text-base-content/80 leading-relaxed max-w-3xl">
+      Full Stack Developer based in Nakuru, Kenya. I build practical web applications and continuously expand my skills across software development, systems, and infrastructure. I value clean code, reliable solutions, and steady improvement through real projects.
+    </p>
   </div>
 
   <!-- Experience -->
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
+  <div class="mb-12">
+    <h2 class="text-2xl font-semibold mb-6">Work Experience</h2>
+
+    <div class="time-line-container space-y-8">
+      <TimeLineElement
+        title="Full Stack Developer"
+        subtitle="2023 — Present | Freelance & Personal Projects"
+      >
+        <ul class="list-disc list-inside space-y-1.5 text-base-content/80">
+          <li>Developed full-stack web applications using React, Next.js, Astro, Node.js and Tailwind CSS</li>
+          <li>Built responsive interfaces focused on performance and usability</li>
+          <li>Integrated APIs and third-party services into production-ready projects</li>
+          <li>Maintained clean, readable code across personal and client work</li>
+        </ul>
+      </TimeLineElement>
+
+      <TimeLineElement
+        title="Software Developer Intern"
+        subtitle="Jan 2024 — May 2024 | County Government of Nakuru"
+      >
+        <ul class="list-disc list-inside space-y-1.5 text-base-content/80">
+          <li>Collaborated with a team on internal tools and client-facing applications</li>
+          <li>Contributed to frontend development and API integration</li>
+          <li>Gained practical experience with team workflows and agile practices</li>
+        </ul>
+      </TimeLineElement>
+    </div>
   </div>
 
-  <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="Full Stack Developer"
-      subtitle="Jan 2020 — Present | Freelance & Personal Projects"
-    >
-      <ul class="list-disc list-inside space-y-1">
-        <li>Developed multiple full-stack web applications using React, Next.js, Astro, Node.js and Tailwind CSS</li>
-        <li>Built responsive and high-performance user interfaces</li>
-        <li>Integrated RESTful APIs and third-party services</li>
-        <li>Focused on writing clean, maintainable, and well-documented code</li>
-      </ul>
-    </TimeLineElement>
+  <!-- Skills -->
+  <div class="mb-12">
+    <h2 class="text-2xl font-semibold mb-6">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+      <div class="badge badge-outline badge-lg justify-start px-4 py-3">JavaScript / TypeScript</div>
+      <div class="badge badge-outline badge-lg justify-start px-4 py-3">React / Next.js</div>
+      <div class="badge badge-outline badge-lg justify-start px-4 py-3">Astro</div>
+      <div class="badge badge-outline badge-lg justify-start px-4 py-3">Node.js & Express</div>
+      <div class="badge badge-outline badge-lg justify-start px-4 py-3">Tailwind CSS</div>
+      <div class="badge badge-outline badge-lg justify-start px-4 py-3">PostgreSQL / MongoDB</div>
+      <div class="badge badge-outline badge-lg justify-start px-4 py-3">Git & GitHub</div>
+      <div class="badge badge-outline badge-lg justify-start px-4 py-3">REST APIs</div>
+      <div class="badge badge-outline badge-lg justify-start px-4 py-3">Problem Solving</div>
+      <div class="badge badge-outline badge-lg justify-start px-4 py-3">Communication</div>
+      <div class="badge badge-outline badge-lg justify-start px-4 py-3">Team Work</div>
 
-    <TimeLineElement
-      title="Software Developer Intern"
-      subtitle="January 2024 — May 2024| [County Government of Nakuru], Nakuru, Kenya"
-    >
-      <ul class="list-disc list-inside space-y-1">
-        <li>Collaborated with a team to develop internal tools and client-facing applications</li>
-        <li>Worked on frontend development and API integration</li>
-        <li>Gained hands-on experience with agile development methodologies</li>
-      </ul>
-    </TimeLineElement>
+    </div>
   </div>
 
   <!-- Certifications -->
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
+  <div class="mb-12">
+    <h2 class="text-2xl font-semibold mb-6">Certifications</h2>
+    <ul class="space-y-2 text-base-content/80">
+      <li>Google IT Support Professional Certificate</li>
+      <li>Meta Front-End Developer Professional Certificate</li>
+      <li>freeCodeCamp — Responsive Web Design</li>
+      <li>IBM Cloud Security</li>
+      <li>Cisco Networking Fundamentals</li>
+      <li>Cisco Certified Network Associate </li>
+      <li>Cisco Certified Network Professional (In progress) </li>
+      <li>Certified Ethical Hacker</li>
+    </ul>
   </div>
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li><a href="#" target="_blank">Google IT Support Professional Certificate</a></li>
-    <li><a href="#" target="_blank">Meta Front-End Developer Professional Certificate</a></li>
-    <li><a href="#" target="_blank">FreeCodeCamp - Responsive Web Design</a></li>
-    <li><a href="#" target="_blank">IBM Cloud Security</a></li>
-    <li><a href="#" target="_blank">Cisco Netwrking Fundamentals</a></li>
-    <li><a href="#" target="_blank">Cisco Certified Network Administrator</a></li>
-    <li><a href="#" target="_blank">Certified Ethical Hacker</a></li>
-    
-  </ul>
-
-  <!-- Skills -->
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
+  <!-- Download CV -->
+  <div class="pt-4">
+    <a href="#" class="btn btn-primary">
+      Download CV
+    </a>
+    <p class="text-sm text-base-content/50 mt-3">
+      PDF version coming soon.
+    </p>
   </div>
-
-  <ul class="list-disc md:columns-3 columns-2 mx-6 leading-relaxed">
-    <li>JavaScript (ES6+)</li>
-    <li>TypeScript</li>
-    <li>React / Next.js</li>
-    <li>Astro Framework</li>
-    <li>Node.js & Express</li>
-    <li>Tailwind CSS</li>
-    <li>PostgreSQL & MongoDB</li>
-    <li>Git & GitHub</li>
-    <li>RESTful APIs</li>
-    <li>Problem Solving & Debugging</li>
-    <li>UI/UX Principles</li>
-  </ul>
 </BaseLayout>
