@@ -41,7 +41,7 @@ const last_posts = posts.slice(0, 3);
     </div>
   </section>
 
-  <!-- Featured Projects -->
+   <!-- Featured Projects -->
   <section id="projects" class="mt-8 mb-20">
     <div class="flex items-end justify-between mb-8">
       <h2 class="text-3xl font-bold">Featured Projects</h2>
@@ -51,48 +51,41 @@ const last_posts = posts.slice(0, 3);
     </div>
 
     <div class="space-y-6">
+      <!-- Muslim Association Nakuru -->
       <HorizontalCard
         title="Muslim Association Nakuru"
         img="/man-logo.webp"
-        desc="A digital solution for a Non Profit Organization based in Nakuru, Kenya."
+        desc="Web platform for a Nakuru-based non-profit. Built the public-facing site to present programmes, improve information access, and support organisational visibility. Stack: HTML, CSS, JavaScript, PHP, Apache, AWS."
         url="https://muslimassociationnakuru.org/"
+        target="_blank"
         badge="Featured"
-        tags={["Web App", "Non-Profit"]}
+        tags={["Web App", "PHP", "AWS"]}
       />
+
       <div class="divider my-0"></div>
+
+      <!-- CareNest -->
       <HorizontalCard
         title="CareNest"
         img="/carenest.webp"
-        desc="A modern website for a Mental Wellness company based in Kenya."
+        desc="Website for a Kenyan mental wellness company. Acted as project manager and contributed to delivery of a clean, responsive site focused on service presentation and easy contact flow."
         url="https://carenest.co.ke/"
-        tags={["Website", "Wellness"]}
+        target="_blank"
+        tags={["Website", "Project Management"]}
+      />
+
+      <div class="divider my-0"></div>
+
+      <!-- Mediskool -->
+      <HorizontalCard
+        title="Mediskool"
+        img="/mediskool-logo.webp"
+        desc="Team lead on a web platform for Mediskool. Focused on coordination, structure, and delivery of a functional public site."
+        url="https://mediskool.site/"
+        target="_blank"
+        tags={["Web Platform", "Team Lead"]}
       />
     </div>
-  </section>
-
-  <!-- Latest from Blog -->
-  <section class="mb-16">
-    <div class="flex items-end justify-between mb-8">
-      <h2 class="text-3xl font-bold">Latest from Blog</h2>
-      <a href="/blog" class="text-sm text-primary hover:underline hidden sm:inline-block">
-        All posts →
-      </a>
-    </div>
-
-    {
-      last_posts.map((post) => (
-        <>
-          <HorizontalCard
-            title={post.data.title}
-            img={post.data.heroImage}
-            desc={post.data.description}
-            url={"/blog/" + createSlug(post.data.title, post.slug)}
-            badge={post.data.badge}
-          />
-          <div class="divider my-0" />
-        </>
-      ))
-    }
   </section>
 </BaseLayout>
 

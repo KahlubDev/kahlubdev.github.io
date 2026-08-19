@@ -3,57 +3,82 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
-  <div>
-    <div class="text-3xl w-full font-bold mb-5">Done Projects</div>
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
+  <!-- Completed Projects -->
+  <div class="mb-10">
+    <h1 class="text-3xl md:text-4xl font-bold mb-3">Projects</h1>
+    <p class="text-base-content/70 text-lg max-w-2xl">
+      Selected work across non-profit, wellness, and health platforms, plus ongoing experiments.
+    </p>
   </div>
 
-  <HorizontalCard
-    title="Muslim Association Nakuru"
-    img="/man-logo.webp"
-    desc="A digital solution for a Non Profit Organization based in Nakuru, Kenya"
-    url="https://muslimassociationnakuru.org"
-    badge="COMPLETED"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="CareNest"
-    img="/carenest.webp"
-    desc="A modern website for a Mental Wellness company based in Kenya"
-    url="https://carenest.co.ke/"
-    badge="COMPLETED"
-  />
-  <HorizontalCard
-    title="Mediskool"
-    img="/mediskool-logo.webp"
-    desc="A health solution for medical practioners"
-    url="https://mediskool.site/"
-    badge="COMPLETE"
-  />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10"> New/Ongoing Projects</div>
+  <div class="mb-6">
+    <h2 class="text-2xl font-semibold mb-6">Completed</h2>
   </div>
 
-  <HorizontalCard
-    title="Video Player"
-    img="/5.webp"
-    desc="A video player built by C that can play most available formats"
-    url="#"
-    badge="Ongoing"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Load balancer"
-    img="/5.webp"
-    desc="A modern solution to ensure that servers are not overloaded, fully customised based on use case"
-    url="#"
-  />
-  <div class="Android Auto clicker"></div>
-  <HorizontalCard
-    title="Android"
-    img="/5.webp"
-    desc="An android solution to automatically click on the timer with minimal user interaction."
-    url="#"
-  />
+  <div class="space-y-6 mb-16">
+    <HorizontalCard
+      title="Muslim Association Nakuru"
+      img="/man-logo.webp"
+      desc="Web platform for a Nakuru-based non-profit. Built the public-facing site to present programmes, improve information access, and support organisational visibility. Stack: HTML, CSS, JavaScript, PHP, Apache, AWS."
+      url="https://muslimassociationnakuru.org/"
+      target="_blank"
+      badge="Completed"
+      tags={["Web App", "PHP", "AWS"]}
+    />
+
+    <HorizontalCard
+      title="CareNest"
+      img="/carenest.webp"
+      desc="Website for a Kenyan mental wellness company. Acted as project manager and contributed to delivery of a clean, responsive site focused on service presentation and contact flow."
+      url="https://carenest.co.ke/"
+      target="_blank"
+      badge="Completed"
+      tags={["Website", "Project Management"]}
+    />
+
+    <HorizontalCard
+      title="Mediskool"
+      img="/mediskool-logo.webp"
+      desc="Team lead on a web platform for medical practitioners. Focused on coordination, structure, and delivery of a functional public site."
+      url="https://mediskool.site/"
+      target="_blank"
+      badge="Completed"
+      tags={["Web Platform", "Team Lead"]}
+    />
+  </div>
+
+  <!-- Ongoing Projects -->
+  <div class="mb-6">
+    <h2 class="text-2xl font-semibold mb-6">Ongoing / Experiments</h2>
+  </div>
+
+  <div class="space-y-6">
+    <HorizontalCard
+      title="Video Player"
+      img="/5.webp"
+      desc="A video player written in C with support for multiple formats. Focused on learning systems-level media handling and performance."
+      url="#"
+      badge="Ongoing"
+      tags={["C", "Systems"]}
+    />
+
+    <HorizontalCard
+      title="Load Balancer"
+      img="/5.webp"
+      desc="Custom load balancing experiment aimed at distributing traffic based on practical use cases and reducing server overload."
+      url="#"
+      badge="Ongoing"
+      tags={["Networking", "Infrastructure"]}
+    />
+
+    <HorizontalCard
+      title="Android Auto Clicker"
+      img="/5.webp"
+      desc="Android utility designed to perform timed clicks with minimal user interaction. Built as a practical automation experiment."
+      url="#"
+      badge="Ongoing"
+      tags={["Android", "Automation"]}
+    />
+  </div>
 </BaseLayout>
