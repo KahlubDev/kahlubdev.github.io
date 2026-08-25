@@ -50,41 +50,39 @@ const last_posts = posts.slice(0, 3);
       </a>
     </div>
 
-    <div class="space-y-6">
-      <!-- Muslim Association Nakuru -->
+       <div class="space-y-6">
+      <HorizontalCard
+        title="AgriPay"
+        img="/agripay-logo.webp"
+        desc="Farmer loan scoring and M-Pesa disbursement MVP. Explainable scoring rules plus real PayHero integration for disbursement and repayment. React, Express, Node.js."
+        url="https://github.com/KahlubDev/agripay"
+        target="_blank"
+        badge="Featured"
+        tags={["Fintech", "React", "Node.js"]}
+      />
+
+      <div class="divider my-0"></div>
+
+      <HorizontalCard
+        title="Mini Redis (Tokio)"
+        img="/5.webp"
+        desc="Redis-compatible server in Rust with Tokio. Async GET/SET, concurrent connections, protocol framing, and async tests."
+        url="https://github.com/KahlubDev/my-redis"
+        target="_blank"
+        tags={["Rust", "Tokio", "Systems"]}
+      />
+
+      <div class="divider my-0"></div>
+
       <HorizontalCard
         title="Muslim Association Nakuru"
         img="/man-logo.webp"
-        desc="Web platform for a Nakuru-based non-profit. Built the public-facing site to present programmes, improve information access, and support organisational visibility. Stack: HTML, CSS, JavaScript, PHP, Apache, AWS."
+        desc="Web platform for a Nakuru-based non-profit. Public site for programmes, information access, and organisational visibility."
         url="https://muslimassociationnakuru.org/"
         target="_blank"
-        badge="Featured"
         tags={["Web App", "PHP", "AWS"]}
       />
-
-      <div class="divider my-0"></div>
-
-      <!-- CareNest -->
-      <HorizontalCard
-        title="CareNest"
-        img="/carenest.webp"
-        desc="Website for a Kenyan mental wellness company. Acted as project manager and contributed to delivery of a clean, responsive site focused on service presentation and easy contact flow."
-        url="https://carenest.co.ke/"
-        target="_blank"
-        tags={["Website", "Project Management"]}
-      />
-
-      <div class="divider my-0"></div>
-
-      <!-- Mediskool -->
-      <HorizontalCard
-        title="Mediskool"
-        img="/mediskool-logo.webp"
-        desc="Team lead on a web platform for Mediskool. Focused on coordination, structure, and delivery of a functional public site."
-        url="https://mediskool.site/"
-        target="_blank"
-        tags={["Web Platform", "Team Lead"]}
-      />
+    </div>
     </div>
   </section>
 </BaseLayout>

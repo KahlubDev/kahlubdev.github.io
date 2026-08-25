@@ -4,19 +4,49 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
 <BaseLayout title="Projects" sideBarActiveItemID="projects">
-  <!-- Completed Projects -->
   <div class="mb-10">
     <h1 class="text-3xl md:text-4xl font-bold mb-3">Projects</h1>
     <p class="text-base-content/70 text-lg max-w-2xl">
-      Selected work across non-profit, wellness, and health platforms, plus ongoing experiments.
+      Selected client work, product builds, and systems experiments across web, fintech, and secure backend development.
     </p>
   </div>
 
+  <!-- Completed -->
   <div class="mb-6">
     <h2 class="text-2xl font-semibold mb-6">Completed</h2>
   </div>
 
   <div class="space-y-6 mb-16">
+    <HorizontalCard
+      title="AgriPay"
+      img="/agripay-logo.webp"
+      desc="Farmer loan scoring and M-Pesa disbursement MVP. Built explainable scoring rules, loan offer flow, and real PayHero integration for disbursement and STK Push repayment. Stack: React (Vite), Express, Node.js, PayHero."
+      url="https://github.com/KahlubDev/agripay"
+      target="_blank"
+      badge="Completed"
+      tags={["Fintech", "React", "Node.js"]}
+    />
+
+    <HorizontalCard
+      title="Secure Notes"
+      img="/5.webp"
+      desc="Rust notes API focused on practical application security. Implemented database-backed notes, intentional SQL injection demonstration, and a remediated parameterised-query version to show secure coding in context."
+      url="https://github.com/KahlubDev/secure-notes"
+      target="_blank"
+      badge="Completed"
+      tags={["Rust", "Security", "SQLite"]}
+    />
+
+    <HorizontalCard
+      title="Mini Redis (Tokio)"
+      img="/5.webp"
+      desc="Redis-compatible server in Rust using Tokio. Implements GET/SET with async I/O, concurrent client handling via tokio::spawn, protocol framing, tracing, and async unit tests."
+      url="https://github.com/KahlubDev/my-redis"
+      target="_blank"
+      badge="Completed"
+      tags={["Rust", "Tokio", "Systems"]}
+    />
+
     <HorizontalCard
       title="Muslim Association Nakuru"
       img="/man-logo.webp"
@@ -48,7 +78,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     />
   </div>
 
-  <!-- Ongoing Projects -->
+  <!-- Ongoing -->
   <div class="mb-6">
     <h2 class="text-2xl font-semibold mb-6">Ongoing / Experiments</h2>
   </div>
