@@ -16,6 +16,15 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     <h2 class="text-2xl font-semibold mb-6">Completed</h2>
   </div>
     <HorizontalCard
+      title="level-ip-rs"
+      img="/level-ip logo.webp"
+      desc="A user-space TCP/IP stack written in Rust, running over a Linux TAP device. Hand-rolled ARP, IPv4, ICMP, and TCP, including a real connection state machine (handshake, data exchange, four-way close), with no std::net and no smoltcp. Verified against real Linux tools: arping, ping, nmap, netcat."
+      url="https://github.com/KahlubDev/level-ip-rs"
+      target="_blank"
+      badge="Completed"
+      tags={["Rust", "TCP/IP", "Systems Programming", "Network Protocols"]}
+      />
+    <HorizontalCard
       title="VNet-L2"
       img="/VNet-L2.webp"
       desc="A Rust-based Layer 2 virtual network switch inspired by ZeroTier-style virtual networking. Explores Ethernet frame representation, MAC address handling and learning, known destination forwarding, unknown destination flooding, broadcast handling, and UDP transport. Built as an independent networking and systems programming project with a modular Rust architecture."
